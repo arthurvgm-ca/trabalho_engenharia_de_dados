@@ -1,0 +1,35 @@
+flowchart TB
+
+    subgraph Fonte
+
+        Y[yFinance]
+
+    end
+
+    subgraph Google Colab
+
+        O[Orquestrador Python]
+
+        subgraph DuckDB
+
+            B[(bronze.stock_raw)]
+
+            S[(silver.stock_clean)]
+
+            G[(gold.stock_metrics)]
+
+        end
+
+        D[Plotly Dashboard]
+
+    end
+
+    Y --> O
+
+    O --> B
+
+    B --> S
+
+    S --> G
+
+    G --> D
