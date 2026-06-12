@@ -189,9 +189,7 @@ flowchart TD
 
 ### Passo 1 — Clonar e instalar
 
-```bash
-git clone https://github.com/seu-usuario/gridinsight-analytics.git
-cd gridinsight-analytics
+
 
 # Criar ambiente virtual (recomendado)
 python -m venv .venv
